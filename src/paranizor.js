@@ -1,5 +1,5 @@
 // after ideas from
-// http://www.crockford.com/javascript/inheritance.html
+// http://javascript.crockford.com/inheritance.html
 // and
 // http://javascript.crockford.com/prototypal.html
 
