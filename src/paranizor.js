@@ -1,4 +1,4 @@
-// after ideas from 
+// after ideas from
 // http://www.crockford.com/javascript/inheritance.html
 // and
 // http://javascript.crockford.com/prototypal.html
@@ -20,7 +20,7 @@ function make_paranizor(value){
 
 function make_zero_paranizor(value){
     var zp = Object.clone(make_paranizor(value));
-    zp.toString = function(){        
+    zp.toString = function(){
         if(this.getValue())
             return this.getParent().toString();
         else
@@ -28,3 +28,14 @@ function make_zero_paranizor(value){
     };
     return zp;
 }
+
+function run(){
+    var p = make_zero_paranizor(42);
+    console.log(p.toString());
+    p.setValue(0);
+    console.log(p.toString());
+    delete(p.toString);
+    console.log(p.toString());
+}
+
+run();
