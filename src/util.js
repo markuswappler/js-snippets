@@ -2,7 +2,7 @@ var make_array_util = function () {
     var iterate = function (f, arr) {
         var i = 0;
         var len = arr.length;
-        var stop;
+        var cont;
         while (i < len) {
             cont = f(arr[i], i);
             if (cont) {
