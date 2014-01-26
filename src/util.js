@@ -124,6 +124,8 @@ var make_pipe = function () {
 var arr = make_array_util();
 var pipe = make_pipe();
 
+// Example: Compute 2 * (1 + 2 + ... + 100) + 1
+
 var res = pipe.init(100).
     last(arr.range).
     last(arr.map, function (x) { return x + 1; }).
