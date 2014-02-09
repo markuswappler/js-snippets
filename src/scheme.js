@@ -1,3 +1,5 @@
+// Little Scheme interpreter, inspired by http://norvig.com/lispy.html
+
 var regex = {
 	open_bracket: /\(/g,
 	close_bracket: /\)/g,
